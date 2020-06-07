@@ -87,4 +87,16 @@ textarea {
     margin-top: 50px;
     font-weight: bolder;
     font-size: 22px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: none;
+    padding: 10px;
+}
+
+#resultOne {
+    margin-bottom: 15px;
+}
+
+#resultTwo {
+    margin-bottom: 15px;
 }

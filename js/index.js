@@ -12,6 +12,7 @@ let arr = [
 
 let tmp;
 let str = ``;
+let strTwo = ``;
 let strComment = ``;
 
 function myClick() {
@@ -58,18 +59,24 @@ function myBuy() {
     dateD.style.border = 'solid black';
   }
 
-  str += `${nameY.value}, thanks for the order. "${arr[tmp - 1].title} by ${
+  str += `${nameY.value}, thanks for the order.`;
+
+  strTwo += ` "${arr[tmp - 1].title} by ${
     arr[tmp - 1].author
   }" in the amount of ${quantity.value} ps. will be delivered on ${
     dateD.value
-  } to the adress ${delivery.value}`;
+  } to the adress ${delivery.value}`
+
+
 
   if (comment.value.length !== 0) {
     strComment += `Your comment: ${comment.value}`;
   }
 
   mainBlock.style.display = 'none';
+  resultstr.style.display = 'block'
 
   resultOne.innerHTML = str;
-  resultTwo.innerHTML = strComment;
+  resultTwo.innerHTML = strTwo;
+  resultThree.innerHTML = strComment;
 }
